@@ -1,6 +1,5 @@
 html {
   box-sizing: border-box;
-}
 
 body {
   margin: 0;
@@ -114,6 +113,7 @@ body {
 
 .six {
   position: relative;
+  --hat-top-offset: -30px; /* Custom property for hat top offset */
 }
 
 .six img {
@@ -124,9 +124,9 @@ body {
 
 .six .hat {
   position: absolute;
-  width: 80px;
-  top: -40px;
-  right: 80px
+  width: 70px;
+  top: var(--hat-top-offset);
+  right: 60px;
   /* transform: scale(0.1); */
 }
 
@@ -276,14 +276,14 @@ body {
   }
 
   .idea-6 span {
-    font-size: 10rem;
+    font-size: 4rem;
   }
-
   .six .hat {
   position: absolute;
   width: 80px;
   top: -20px;   /* Move hat down */
-  right:200px;  /* Move hat left */
+  right: 10vw;  /* Use viewport width for better responsiveness */
+}
 }
 
   .wish-hbd {

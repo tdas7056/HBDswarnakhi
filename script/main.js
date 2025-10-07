@@ -16,7 +16,7 @@ const fetchData = () => {
         }
 
         // Check if the iteration is over
-        // Run amimation if so
+        // Run animation if so
         if ( dataArr.length === dataArr.indexOf(customData) + 1 ) {
           animationTimeline();
         } 
@@ -35,7 +35,7 @@ document.addEventListener("click", () => {
 
 // Animation Timeline
 const animationTimeline = () => {
-  // Spit chars that needs to be animated individually
+  // Split chars that needs to be animated individually
   const textBoxChars = document.getElementsByClassName("hbd-chatbox")[0];
   const hbd = document.getElementsByClassName("wish-hbd")[0];
 
@@ -103,12 +103,12 @@ const animationTimeline = () => {
     })
     .to(
       ".three",
-      0.7,
+      1.7,
       {
         opacity: 0,
         y: 10
       },
-      "+=2"
+      "+=0.7"
     )
 
 
@@ -116,7 +116,7 @@ const animationTimeline = () => {
       scale: 0.2,
       opacity: 0
     })
-    .from(".fake-btn", 0.9, {
+    .from(".fake-btn", 1.2, {
       scale: 0.2,
       opacity: 0
     })
@@ -128,7 +128,7 @@ const animationTimeline = () => {
       },
       0.05
     )
-    .to(".fake-btn", 0.9, {
+    .to(".fake-btn", 1.2, {
       backgroundColor: "rgb(127, 206, 248)"
     })
     .to(
@@ -141,12 +141,12 @@ const animationTimeline = () => {
       },
       "+=0.7"
     )
-    .from(".idea-1", 0.7, ideaTextTrans)
-    .to(".idea-1", 0.7, ideaTextTransLeave, "+=1.5")
-    .from(".idea-2", 0.7, ideaTextTrans)
-    .to(".idea-2", 0.7, ideaTextTransLeave, "+=1.5")
-    .from(".idea-3", 0.7, ideaTextTrans)
-    .to(".idea-3 strong", 0.5, {
+    .from(".idea-1", 1.7, ideaTextTrans)
+    .to(".idea-1", 1.7, ideaTextTransLeave, "+=1.5")
+    .from(".idea-2", 1.7, ideaTextTrans)
+    .to(".idea-2", 1.7, ideaTextTransLeave, "+=1.5")
+    .from(".idea-3", 1.7, ideaTextTrans)
+    .to(".idea-3 strong", 1.5, {
       scale: 1.2,
       x: 10,
       backgroundColor: "rgb(21, 161, 237)",
